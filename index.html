@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Am Atomic!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('Shadow.jpg'); /* 背景圖片 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Impact', 'Microsoft JhengHei', sans-serif;
+        }
+
+        p {
+            font-size: 70px;           
+            letter-spacing: 6px;       
+            color: rgba(138, 43, 226, 0.7); 
+            text-shadow: 
+                0 0 10px rgba(138, 43, 226, 0.5),
+                0 0 20px rgba(186, 85, 211, 0.4),
+                0 0 30px rgba(221, 160, 221, 0.3); 
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                color: rgba(138, 43, 226, 0.5);
+                text-shadow: 
+                    0 0 5px rgba(138, 43, 226, 0.3),
+                    0 0 10px rgba(186, 85, 211, 0.2),
+                    0 0 15px rgba(221, 160, 221, 0.1);
+            }
+            to {
+                color: rgba(138, 43, 226, 0.9);
+                text-shadow: 
+                    0 0 15px rgba(138, 43, 226, 0.7),
+                    0 0 30px rgba(186, 85, 211, 0.5),
+                    0 0 45px rgba(221, 160, 221, 0.3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>I Am Atomic!</p>
+</body>
+</html>
